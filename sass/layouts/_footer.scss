@@ -1,0 +1,47 @@
+// Footer
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-bottom: 33px;
+    gap: 16px;
+    background-color: $footer-color;
+    color: $footer-text-color;
+}
+
+.footer__title {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+.footer__listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+
+.fa-utensils {
+    font-size: 13px;
+}
+
+.fa-handshake-angle {
+    font-size: 9px;
+}
+
+.footer__listLink {
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: $footer-text-color;
+}

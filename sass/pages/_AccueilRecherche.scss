@@ -1,0 +1,28 @@
+// Formulaire recherche
+
+.localisation__searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: $input-color;
+    gap: 17px;
+    padding: 16px 0;
+}
+
+.localisation__searchIcon {
+    color: $input-text-color;
+    font-size: 16px;
+    padding-left: 104px;
+}
+
+.localisation__searchInput {
+    background-color: transparent;
+    border: none;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+    color: $input-text-color;
+}
+
+input::placeholder {
+    color: $input-text-color;
+}

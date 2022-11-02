@@ -1,0 +1,326 @@
+.classic-button {
+  padding: 13px 16px 13px 16px;
+  border-radius: 25px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.classic-button:hover {
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
+.restaurant__cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.restaurant__cardContainer:hover {
+  cursor: pointer;
+}
+
+.restaurant__card {
+  width: 100%;
+}
+
+.restaurant__cardImageContainer {
+  margin: 0;
+  width: 100%;
+  height: 173px;
+}
+
+.restaurant__cardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant__cardDescriptionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 33px 13px 13px;
+}
+
+.restaurant__cardDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.restaurant__cardText {
+  font-family: "roboto";
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.restaurant__cardIconContainer {
+  border: none;
+  background-color: transparent;
+}
+
+.restaurant__cardIcon {
+  font-size: 22px;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/font/Roboto/roboto-bold.woff2") format("woff2"), url("../../assets/font/Roboto/roboto-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/font/Roboto/roboto-medium.woff2") format("woff2"), url("../../assets/font/Roboto/roboto-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/font/Roboto/roboto-light.woff2") format("woff2"), url("../../assets/font/Roboto/roboto-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../assets/font/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../assets/font/Shrikhand/Shrikhand-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Shrikhand";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li, form, article, aside, footer, header, section, a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-bottom: 33px;
+  gap: 16px;
+  background-color: #353535;
+  color: white;
+}
+
+.footer__title {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer__listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+.fa-utensils {
+  font-size: 13px;
+}
+
+.fa-handshake-angle {
+  font-size: 9px;
+}
+
+.footer__listLink {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  box-shadow: 0px 2px 4px rgba(16, 16, 16, 0.15);
+}
+
+.restaurant__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 26px;
+  background-color: #F7F7F7;
+}
+
+.restaurant__title {
+  margin-top: 54px;
+}
+
+.restaurant__cardsList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  gap: 20px;
+}
+
+.bookrestaurant__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 34px;
+  gap: 10px;
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+.bookrestaurant__title {
+  margin-top: 39px;
+}
+
+.bookrestaurant__text {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+.bookrestaurant__button {
+  margin-bottom: 57px;
+}
+
+.localisation__searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: #EAEAEA;
+  gap: 17px;
+  padding: 16px 0;
+}
+
+.localisation__searchIcon {
+  color: #353535;
+  font-size: 16px;
+  padding-left: 104px;
+}
+
+.localisation__searchInput {
+  background-color: transparent;
+  border: none;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+}
+
+input::placeholder {
+  color: #353535;
+}
+
+.fonctioning__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 26px;
+}
+
+.fonctioning__title {
+  margin-top: 48px;
+}
+
+.fonctioning__listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 68px;
+  margin-left: 12px;
+}
+
+.fonctioning__list {
+  width: 100%;
+}
+
+.fonctioning__listLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 28px 0;
+  padding-left: 33px;
+  gap: 23px;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.fonctioning__listLink--color {
+  background-color: #F5EDFF;
+}
+
+.fonctioning__listLinkNumber {
+  padding: 5px 10px 5px 10px;
+  background-color: #9356DC;
+  position: absolute;
+  left: -12px;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  border-radius: 100%;
+}
+
+.fonctioning__listLinkIcon {
+  color: #7E7E7E;
+  font-size: 20px;
+}
+.fonctioning__listLinkIcon--color {
+  color: #9356DC;
+}
+
+.fonctioning__listLinkText {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #101010;
+}
+
+/*# sourceMappingURL=style.css.map */

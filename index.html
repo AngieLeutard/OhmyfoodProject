@@ -13,96 +13,108 @@
             <h1>ohmyfood</h1>
         </header>
 
-        <form method="post" action="traitement.php">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" name="localisation" placeholder="Paris, Belleville" />
+        <form class="localisation__searchContainer" method="post" action="traitement.php">
+            <i class="fa-solid fa-location-dot localisation__searchIcon"></i>
+            <input class="localisation__searchInput" type="text" name="localisation" placeholder="Paris, Belleville" />
         </form>
 
-        <section>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button type="button">Explorer nos restaurants</button>
+        <section class="bookrestaurant__container">
+            <h2 class="bookrestaurant__title">Réservez le menu qui vous convient</h2>
+            <p class="bookrestaurant__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="classic-button bookrestaurant__button" type="button">Explorer nos restaurants</button>
         </section>
 
-        <section>
-            <h2>Fonctionnement</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <span>1</span>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choisissez un restaurant</p>
-                    </a>
+        <section class="fonctioning__container">
+            <h2 class="fonctioning__title">Fonctionnement</h2>
+            <ul class="fonctioning__listContainer">
+                <li class="fonctioning__list">
+                    <div class="fonctioning__listLink" href="#">
+                        <span class="fonctioning__listLinkNumber">1</span>
+                        <i class="fa-solid fa-mobile-screen-button fonctioning__listLinkIcon"></i>
+                        <p class="fonctioning__listLinkText">Choisissez un restaurant</p>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <span>2</span>
-                        <i class="fa-solid fa-list-ul"></i>
-                        <p>Composez votre menu</p>
-                    </a>
+                <li class="fonctioning__list">
+                    <div class="fonctioning__listLink" href="#">
+                        <span class="fonctioning__listLinkNumber">2</span>
+                        <i class="fa-solid fa-list-ul fonctioning__listLinkIcon"></i>
+                        <p class="fonctioning__listLinkText">Composez votre menu</p>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <span>3</span>
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </a>
+                <li class="fonctioning__list">
+                    <div class="fonctioning__listLink fonctioning__listLink--color" href="#">
+                        <span class="fonctioning__listLinkNumber">3</span>
+                        <i class="fa-solid fa-store fonctioning__listLinkIcon fonctioning__listLinkIcon--color"></i>
+                        <p class="fonctioning__listLinkText">Dégustez au restaurant</p>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Restaurants</h2>
-            <div>
-                <a href="#">
-                    <article>
-                        <p>
-                            <img class="aside__listImage" src="./assets/images/imagesCards/laPaletteDuGout.png" alt="restaurant">
+        <section class="restaurant__container">
+            <h2 class="restaurant__title">Restaurants</h2>
+            <div class="restaurant__cardsList">
+                <a class="restaurant__cardContainer" href="#">
+                    <article class="restaurant__card">
+                        <p class="restaurant__cardImageContainer">
+                            <img class="restaurant__cardImage" src="./assets/images/imagesCards/laPaletteDuGout.png" alt="restaurant">
                         </p>
-                        <div>
-                            <div>
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                        <div class="restaurant__cardDescriptionContainer">
+                            <div class="restaurant__cardDescription">
+                                <h3 class="restaurant__cardTitle">La palette du goût</h3>
+                                <p class="restaurant__cardText">Ménilmontant</p>
                             </div>
+                            <button class="restaurant__cardIconContainer" type="button">
+                                <i class="fa-regular fa-heart restaurant__cardIcon"></i>
+                            </button>
                         </div>
                     </article>
                 </a>
-                <a href="#">
-                    <article>
-                        <p>
-                            <img class="aside__listImage" src="./assets/images/imagesCards/laNoteEnchantee.png" alt="restaurant">
+                <a class="restaurant__cardContainer" href="#">
+                    <article class="restaurant__card">
+                        <p class="restaurant__cardImageContainer">
+                            <img class="restaurant__cardImage" src="./assets/images/imagesCards/laNoteEnchantee.png" alt="restaurant">
                         </p>
-                        <div>
-                            <div>
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                        <div class="restaurant__cardDescriptionContainer">
+                            <div class="restaurant__cardDescription">
+                                <h3 class="restaurant__cardTitle">La note enchantée</h3>
+                                <p class="restaurant__cardText">Charonne</p>
                             </div>
+                            <button class="restaurant__cardIconContainer" type="button">
+                                <i class="fa-regular fa-heart restaurant__cardIcon"></i>
+                            </button>
                         </div>
                     </article>
                 </a>
-                <a href="#">
-                    <article>
-                        <p>
-                            <img class="aside__listImage" src="./assets/images/imagesCards/aLaFrançaise.png" alt="restaurant">
+                <a class="restaurant__cardContainer" href="#">
+                    <article class="restaurant__card">
+                        <p class="restaurant__cardImageContainer">
+                            <img class="restaurant__cardImage" src="./assets/images/imagesCards/aLaFrançaise.png" alt="restaurant">
                         </p>
-                        <div>
-                            <div>
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
+                        <div class="restaurant__cardDescriptionContainer">
+                            <div class="restaurant__cardDescription">
+                                <h3 class="restaurant__cardTitle">À la française</h3>
+                                <p class="restaurant__cardText">Cité Rouge</p>
                             </div>
+                            <button class="restaurant__cardIconContainer" type="button">
+                                <i class="fa-regular fa-heart restaurant__cardIcon"></i>
+                            </button>
                         </div>
                     </article>
                 </a>
-                <a href="#">
-                    <article>
-                        <p>
-                            <img class="aside__listImage" src="./assets/images/imagesCards/leDeliceDesSens.png" alt="restaurant">
+                <a class="restaurant__cardContainer" href="#">
+                    <article class="restaurant__card">
+                        <p class="restaurant__cardImageContainer">
+                            <img class="restaurant__cardImage" src="./assets/images/imagesCards/leDeliceDesSens.png" alt="restaurant">
                         </p>
-                        <div>
-                            <div>
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                        <div class="restaurant__cardDescriptionContainer">
+                            <div class="restaurant__cardDescription">
+                                <h3 class="restaurant__cardTitle">Le délice des sens</h3>
+                                <p class="restaurant__cardText">Folie-Méricourt</p>
                             </div>
+                            <button class="restaurant__cardIconContainer" type="button">
+                                <i class="fa-regular fa-heart restaurant__cardIcon"></i>
+                            </button>
                         </div>
                     </article>
                 </a>
@@ -110,21 +122,21 @@
         </section>
 
         <footer>
-            <p>ohmyfood</p>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a> 
+            <p class="footer__title">ohmyfood</p>
+            <ul class="footer__listContainer">
+                <li class="footer__list">
+                    <i class="fa-solid fa-utensils footer__listIcon"></i>
+                    <a class="footer__listLink" href="#">Proposer un restaurant</a> 
                 </li>
-                <li>
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <a href="#">Devenir partenaire</a>
+                <li class="footer__list">
+                    <i class="fa-solid fa-handshake-angle footer__listIcon"></i>
+                    <a class="footer__listLink" href="#">Devenir partenaire</a>
                 </li>
-                <li>
-                    <a href="#">Mentions légales</a>
+                <li class="footer__list">
+                    <a class="footer__listLink" href="#">Mentions légales</a>
                 </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="footer__list">
+                    <a class="footer__listLink" href="#">Contact</a>
                 </li>
             </ul>
         </footer>

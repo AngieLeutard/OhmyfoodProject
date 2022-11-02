@@ -1,0 +1,64 @@
+// Restaurant cards
+
+.restaurant__cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+.restaurant__card {
+    width: 100%;
+
+}
+
+.restaurant__cardImageContainer {
+    margin: 0;
+    width: 100%;
+    height: 173px;
+
+}
+
+.restaurant__cardImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.restaurant__cardDescriptionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 33px 13px 13px;
+}
+.restaurant__cardDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.restaurant__cardText {
+    font-family: "roboto";
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.restaurant__cardIconContainer {
+    border: none;
+    background-color: transparent;
+}
+.restaurant__cardIcon {
+    font-size: 22px;
+}

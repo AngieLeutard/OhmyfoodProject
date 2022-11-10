@@ -3,9 +3,9 @@
 .restaurant__cardContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
     width: 100%;
-    color: black;
-    text-decoration: none;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -17,6 +17,10 @@
 
 .restaurant__card {
     width: 100%;
+    text-decoration: none;
+    color: black;
+
+
 
 }
 
@@ -34,16 +38,10 @@
     border-radius: 15px 15px 0 0;
 }
 
-.restaurant__cardDescriptionContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 33px 13px 13px;
-}
 .restaurant__cardDescription {
     display: flex;
     flex-direction: column;
+    padding: 16px 33px 13px 13px;
     gap: 5px;
     
 }
@@ -56,9 +54,37 @@
 }
 
 .restaurant__cardIconContainer {
-    border: none;
     background-color: transparent;
+    border: none;
 }
+
 .restaurant__cardIcon {
     font-size: 22px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
+
+.restaurant__cardLikeButton {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+
+}
+
+.restaurant__new {
+    padding: 7px 9px 7px 9px;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $new-background-color;
+    color: $new-text-color;
+    border-radius: 2px;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+

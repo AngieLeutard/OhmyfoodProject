@@ -1,8 +1,3 @@
-.fa-test {
-  font-size: 40px;
-  color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-}
-
 .classic-button {
   padding: 13px 16px 13px 16px;
   border-radius: 25px;
@@ -438,6 +433,11 @@ header {
   margin-bottom: 64px;
   gap: 20px;
 }
+@media screen and (min-width: 769px) {
+  .restaurant__cardsList {
+    flex-direction: row;
+  }
+}
 
 .bookrestaurant__container {
   display: flex;
@@ -509,6 +509,11 @@ input::placeholder {
   gap: 24px;
   margin-bottom: 68px;
   margin-left: 12px;
+}
+@media screen and (min-width: 769px) {
+  .fonctioning__listContainer {
+    flex-direction: row;
+  }
 }
 
 .fonctioning__list {

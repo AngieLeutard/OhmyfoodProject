@@ -18,6 +18,10 @@
     gap: 24px;
     margin-bottom: 68px;
     margin-left: 12px;
+
+    @include desktop-only {
+        flex-direction: row;
+    }
 }
 
 .fonctioning__list {

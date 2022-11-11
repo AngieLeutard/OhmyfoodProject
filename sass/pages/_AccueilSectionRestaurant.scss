@@ -17,4 +17,8 @@
     flex-direction: column;
     margin-bottom: 64px;
     gap: 20px;
+
+    @include desktop-only {
+        flex-direction: row;
+    }
 }

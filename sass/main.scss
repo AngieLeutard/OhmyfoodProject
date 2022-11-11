@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixin";
 
 @import "./components/button";
 @import "./components/card";
@@ -15,4 +16,6 @@
 @import "./pages/AccueilSectionRestaurant";
 @import "./pages/AccueilSectionReservez";
 @import "./pages/AccueilRecherche";
-@import "./pages/AccueilFonctioning"
+@import "./pages/AccueilFonctioning";
+
+

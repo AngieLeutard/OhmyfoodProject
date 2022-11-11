@@ -9,6 +9,12 @@ footer {
     gap: 16px;
     background-color: $footer-color;
     color: $footer-text-color;
+
+    @include desktop-only {
+        flex-direction: row-reverse;
+        padding-right: 100px;
+        gap: 70px;
+    }
 }
 
 .footer__title {
@@ -22,6 +28,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 7px;
+
+    @include desktop-only {
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
 .footer__list {

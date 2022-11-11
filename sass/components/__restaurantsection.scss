@@ -18,6 +18,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @include desktop-only {
+        align-items: center;
+    }
 }
 
 .restaurant__banniere {
@@ -26,6 +30,12 @@
 
 .restaurant__banniereImage {
     width: 100%;
+    height: 275px;
+    object-fit: cover;
+
+    @include desktop-only {
+        height: 350px;
+    }
 }
 
 .restaurant__section {
@@ -38,6 +48,11 @@
     padding-right: 13px;
     padding-bottom: 40px;
     margin-top: -55px;
+
+    @include desktop-only {
+        width: 73%;
+    
+    }
 }
 
 .restaurant__scetionTitleContainer{
@@ -47,6 +62,11 @@
     align-items: center;
     padding-top: 32px;
     padding-bottom: 42px;
+
+    @include desktop-only {
+        padding-left: 210px;
+        padding-right: 210px;
+    }
 }
 
 // Dish
@@ -55,6 +75,11 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+
+    @include desktop-only {
+        padding-left: 210px;
+        padding-right: 210px;
+    }
 }
 
 .dish__sectionTitle {
@@ -169,5 +194,9 @@
 .order__button {
     width: 50%;
     align-items: center;
+
+    @include desktop-only {
+        width: 17%;
+    }
 
 }

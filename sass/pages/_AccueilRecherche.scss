@@ -3,6 +3,7 @@
 .localisation__searchContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: $input-color;
     gap: 17px;
     padding: 16px 0;
@@ -11,7 +12,7 @@
 .localisation__searchIcon {
     color: $input-text-color;
     font-size: 16px;
-    padding-left: 104px;
+    padding-left: 60px;
 }
 
 .localisation__searchInput {

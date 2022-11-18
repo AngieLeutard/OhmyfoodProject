@@ -235,16 +235,12 @@
   gap: 14px;
 }
 
-.dish__listLink {
-  cursor: pointer;
-  text-decoration: none;
-  color: #101010;
-}
-
 .dish__sectionList {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
+  color: #101010;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);

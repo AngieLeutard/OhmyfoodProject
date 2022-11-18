@@ -214,6 +214,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  opacity: 1;
 }
 @media screen and (min-width: 769px) {
   .dish__section {
@@ -318,6 +319,51 @@
   font-weight: 500;
 }
 
+.starter {
+  animation: starter 1s 1;
+}
+
+.dish {
+  animation: dish 1s 1;
+}
+
+.dessert {
+  animation: dessert 1s 1;
+}
+
+@keyframes starter {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dish {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dessert {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .order__buttonContainer {
   display: flex;
   justify-content: center;

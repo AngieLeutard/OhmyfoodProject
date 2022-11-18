@@ -51,11 +51,10 @@
 
     @include desktop-only {
         width: 73%;
-    
     }
 }
 
-.restaurant__scetionTitleContainer{
+.restaurant__sectionTitleContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -139,7 +138,6 @@
             transform: rotate(0deg);
             transition: transform .8s;
         }
-
     }        
 }
 
@@ -191,6 +189,7 @@
     display: flex;
     justify-content: center;
 }
+
 .order__button {
     width: 50%;
     align-items: center;
@@ -198,5 +197,4 @@
     @include desktop-only {
         width: 17%;
     }
-
 }

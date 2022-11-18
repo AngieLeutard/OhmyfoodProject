@@ -7,7 +7,12 @@
     padding: 0 20px;
     gap: 26px;
 
+    @include tablette-only {
+        align-items: center;
+    }
+
     @include desktop-only {
+        align-items: flex-start;
         padding-left: 193px;
 
     }
@@ -49,6 +54,14 @@
 
     &--color {
         background-color: $fonctioning-hover-color;
+    }
+
+    @include tablette-only {
+        min-width: 341px;
+    }
+
+    @include desktop-only {
+        min-width: 0;
     }
 }
 

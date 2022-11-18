@@ -50,9 +50,11 @@
     &:focus,
     &:active {
         cursor: pointer;
+        
         .like__button--heart{
             display: none;
         }
+
         .like__button--color {
             display: block;
             transform: scale(1.15);

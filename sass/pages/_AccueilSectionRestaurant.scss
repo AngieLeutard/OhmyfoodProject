@@ -8,7 +8,12 @@
     gap: 26px;
     background-color: $background-color;
 
+    @include tablette-only {
+        align-items: center;
+    }
+
     @include desktop-only {
+        align-items: flex-start;
         padding-left: 193px;
         padding-right: 0;
     }
@@ -25,7 +30,10 @@
     gap: 20px;
 
     @include desktop-only {
-        flex-direction: row;
-        width: 112%;
+        flex-flow: row nowrap;
+        width: 100%;
+        overflow: scroll;
+        scroll-snap-type: none;
+        padding-bottom: 20px;
     }
 }

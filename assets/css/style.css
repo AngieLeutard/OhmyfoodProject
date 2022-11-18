@@ -460,6 +460,8 @@ footer {
   footer {
     flex-direction: row-reverse;
     padding-right: 100px;
+    padding-top: 52px;
+    padding-bottom: 43px;
     gap: 70px;
   }
 }

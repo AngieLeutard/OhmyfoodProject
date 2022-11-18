@@ -12,6 +12,7 @@
 .classic-button:hover {
   cursor: pointer;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .like__button {
@@ -472,16 +473,26 @@ header {
   box-shadow: 0px 2px 4px rgba(16, 16, 16, 0.15);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .lds-roller {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 100%;
+  z-index: 1;
+  animation: ldssize 3s 1;
 }
 
 .lds-roller div {
@@ -496,8 +507,9 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: red;
+  background: transparent;
   margin: -4px 0 0 -4px;
+  animation: ldscolor 3s 1;
 }
 
 .lds-roller div:nth-child(1) {
@@ -578,6 +590,28 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes ldssize {
+  0% {
+    width: 100%;
+  }
+  85% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes ldscolor {
+  0% {
+    background: #9356DC;
+  }
+  85% {
+    background: #9356DC;
+  }
+  100% {
+    background: transparent;
   }
 }
 .restaurant__container {

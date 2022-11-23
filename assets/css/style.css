@@ -529,9 +529,9 @@ body {
 
 .lds-roller {
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
+  padding-top: 0;
+  justify-content: center;
   background-color: white;
   width: 0%;
   height: 100%;
@@ -639,12 +639,15 @@ body {
 @keyframes ldssize {
   0% {
     width: 100%;
+    padding-top: 200px;
   }
   85% {
     width: 100%;
+    padding-top: 200px;
   }
   100% {
     width: 100%;
+    padding-top: 200px;
   }
 }
 @keyframes ldscolor {

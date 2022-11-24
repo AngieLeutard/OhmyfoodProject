@@ -530,8 +530,8 @@ body {
 .lds-roller {
   display: flex;
   position: absolute;
-  padding-top: 0;
   justify-content: center;
+  align-items: flex-start;
   background-color: white;
   width: 0%;
   height: 100%;
@@ -639,15 +639,15 @@ body {
 @keyframes ldssize {
   0% {
     width: 100%;
-    padding-top: 200px;
+    padding-top: 250px;
   }
   85% {
     width: 100%;
-    padding-top: 200px;
+    padding-top: 250px;
   }
   100% {
     width: 100%;
-    padding-top: 200px;
+    padding-top: 250px;
   }
 }
 @keyframes ldscolor {
